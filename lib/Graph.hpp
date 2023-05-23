@@ -58,6 +58,10 @@ public:
     /// @param from the value of the vertex to check the edge from
     /// @param to the value of the vertex to check the edge to
     bool hasEdge(T from, T to) const;
+
+    /// @brief get the neighbors of a vertex
+    /// @param vertex the value of the vertex to get the neighbors of
+    /// @return a set of the neighbors of the vertex
     std::optional<std::set<T>> getNeighbors(T vertex) const;
 
 
