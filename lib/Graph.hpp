@@ -61,7 +61,7 @@ public:
 
     /// @brief get the neighbors of a vertex
     /// @param vertex the value of the vertex to get the neighbors of
-    /// @return a set of the neighbors of the vertex
+    /// @return a set of the neighbors of the vertex if vertex is in the graph, otherwise std::nullopt
     std::optional<std::set<T>> getNeighbors(T vertex) const;
 
 
