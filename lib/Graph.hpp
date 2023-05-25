@@ -76,6 +76,7 @@ public:
 
     /// @brief BFS traversal of the graph
     /// @param start the value of the vertex to start the traversal from
+    /// @return a vector of vertices in the order of BFS traversal
     std::vector<T> BFS(T start);
 
     /// @brief find the length of the shortest path between two vertices
