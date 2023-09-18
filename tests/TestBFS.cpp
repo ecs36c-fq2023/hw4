@@ -4,8 +4,7 @@
 
 using namespace std;
 
-template <typename T>
-Graph<T> getTextbookGraph() {
+Graph<char> getTextbookGraphBFS() {
 
     std::map<char, std::set<char>> adjList;
     adjList['w'] = { 'r', 'v', 'x', 'z' };
@@ -22,13 +21,13 @@ Graph<T> getTextbookGraph() {
     return g;
 }
 
-TEST(BFSTest, InstantiateFromEdges)
+TEST(BFSTest, InstantiateGraphFromEdges)
 {
     Graph<int> g({ {1, 2}, {1, 3}, {2, 3} });
     ASSERT_EQ(g.size(), 3);
 
     std::vector<int> bfs = g.BFS(1);
-    std::vector<int> expected{ 1, 2, 3};
+    std::vector<int> expected{ 1, 2, 3 };
 
     ASSERT_EQ(bfs.size(), g.size());
     ASSERT_EQ(bfs, expected);

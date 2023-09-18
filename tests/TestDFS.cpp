@@ -3,7 +3,7 @@
 
 
 /// @brief: This build textbook Figure 20.4
-Graph<char> getTextbookGraph() {
+Graph<char> getTextbookGraphDFS() {
 
     std::map<char, std::set<char>> adjList;
     adjList['u'] = { 'v', 'x' };
@@ -61,7 +61,7 @@ std::vector<int> getFinishTimes(Graph<T> &g, const std::list<T> &order)
 
 TEST(DFSTest, TextbookExampleTopologicalSort)
 {
-    Graph<char> g = getTextbookGraph();
+    Graph<char> g = getTextbookGraphDFS();
     std::list<char> dfs = g.DFS();
     std::list<char> expected{ 'w', 'z', 'u', 'v', 'y', 'x'};
     ASSERT_EQ(dfs.size(), g.size());
@@ -70,7 +70,7 @@ TEST(DFSTest, TextbookExampleTopologicalSort)
 
 TEST(DFSTest, TextbookExampleDiscoveryTimes)
 {
-    Graph<char> g = getTextbookGraph();
+    Graph<char> g = getTextbookGraphDFS();
     std::list<char> dfs = g.DFS();
     std::vector<int> discoveryTimes = getDiscoveryTimes(g, dfs);
     std::vector<int> expectedDiscoveryTimes{ 9, 10, 1, 2, 3, 4 };
