@@ -25,7 +25,7 @@ private:
     /// @param u the vertex to visit
     /// @param time the current time count
     /// @param record a list of vertices in the order of topological sort
-    void DFS_visit(T &u, int &time, std::list<T> &record);
+    void DFS_visit(const T &u, int &time, std::list<T> &record);
 
 public:
     Graph() = default;
@@ -82,9 +82,8 @@ public:
     /// @brief find the length of the shortest path between two vertices
     /// @param start the starting vertex of the shortest path
     /// @param end the ending vertex of the shortest path
-    /// @param runBFS if true, will run BFS to find the shortest path, otherwise will use the distance field of the vertices
     /// @return the length of the shortest path between the two vertices
-    int shortestPath(T start, T end, bool runBFS = false);
+    int shortestPath(T start, T end);
 
     // ----------------- DFS -----------------
 
