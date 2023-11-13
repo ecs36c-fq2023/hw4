@@ -1,6 +1,6 @@
 # Homework 4 - Graph
 
-> Due: 06-15-2023 11:59:59 PM
+> Due: 12-3-2023 11:59:59 PM
 
 **Topics**: Graph, BFS, Shortest Path, DFS, and Topological Sort
 
@@ -74,7 +74,8 @@ both `_adjList` and `_vertices` should be updated.
 
 - Implement `std::vector<T> BFS(T start);` defined in [lib/Graph.hpp](./lib/Graph.hpp).
   - For the queue used in `BFS`, please use C++ standard library by `#include <queue>`.
-- Implement `int shortestPath(T start, T end, bool runBFS = false);` defined in [lib/Graph.hpp](./lib/Graph.hpp).
+- Implement `int shortestPath(T start, T end)` defined in [lib/Graph.hpp](./lib/Graph.hpp).
+  - You can assume `BFS` is never called before calling `shortestPath`.
 - Create test cases in [tests/TestBFS.cpp](./tests/TestBFS.cpp).
 - For formal definitions, please refer to textbook 20.2.
 - We provide the example graph (Figure 20.3) in [test/TestBFS.cpp](./tests/TestBFS.cpp) for you to test your code.
@@ -85,6 +86,7 @@ both `_adjList` and `_vertices` should be updated.
 - Create test cases in [tests/TestDFS.cpp](./tests/TestDFS.cpp).
 - For formal definitions, please refer to textbook 20.3.
 - We provide the example graph (Figure 20.4) in [test/TestDFS.cpp](./tests/TestDFS.cpp) for you to test your code.
+- You can implement `void DFS_visit(const T &u, int &time, std::list<T> &record);` to help add the `Node.value` to a `record` vector.
 
 ### Submission
 
@@ -107,7 +109,7 @@ Use one of the following options to set up your environment.
 
 - Click the following button to set up the environment.
 
-  [![Setup Local Dev Container](https://img.shields.io/static/v1?label=Local%20Dev%20Container&message=Setup&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/ecs36c-sq2023/hw4)
+  [![Setup Local Dev Container](https://img.shields.io/static/v1?label=Local%20Dev%20Container&message=Setup&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/ecs36c-fq2024/hw4)
 
 - When asked for selecting a Kit to configure CMake, choose **GCC**.
 
@@ -119,7 +121,7 @@ Use one of the following options to set up your environment.
 
 - Run the following command inside the integrated terminal.
 
-  `git clone https://github.com/ecs36c-sq2023/hw4 ecs36c-hw4`
+  `git clone https://github.com/ecs36c-fq2023/hw4 ecs36c-hw4`
 
 - Run `code ./ecs36c-hw4` to open the folder.
 
@@ -131,7 +133,7 @@ Use one of the following options to set up your environment.
 - Run the following commands
 
   ```bash
-  git clone https://github.com/ecs36c-sq2023/hw4 ecs36c-hw4
+  git clone https://github.com/ecs36c-fq2023/hw4 ecs36c-hw4
   cd ./ecs36c-hw4
   mkdir build
   cd build
