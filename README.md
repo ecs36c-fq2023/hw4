@@ -1,6 +1,6 @@
 # Homework 4 - Graph
 
-> Due: 12-3-2023 11:59:59 PM
+> Due: 12-8-2024 11:59:59 PM
 
 **Topics**: Graph, BFS, Shortest Path, DFS, and Topological Sort
 
@@ -109,7 +109,7 @@ Use one of the following options to set up your environment.
 
 - Click the following button to set up the environment.
 
-  [![Setup Local Dev Container](https://img.shields.io/static/v1?label=Local%20Dev%20Container&message=Setup&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/ecs36c-fq2023/hw4)
+  [![Setup Local Dev Container](https://img.shields.io/static/v1?label=Local%20Dev%20Container&message=Setup&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/ecs36c-fq2024/hw4)
 
 - When asked for selecting a Kit to configure CMake, choose **GCC**.
 
@@ -121,7 +121,7 @@ Use one of the following options to set up your environment.
 
 - Run the following command inside the integrated terminal.
 
-  `git clone https://github.com/ecs36c-fq2023/hw4 ecs36c-hw4`
+  `git clone https://github.com/ecs36c-fq2024/hw4 ecs36c-hw4`
 
 - Run `code ./ecs36c-hw4` to open the folder.
 
@@ -133,7 +133,7 @@ Use one of the following options to set up your environment.
 - Run the following commands
 
   ```bash
-  git clone https://github.com/ecs36c-fq2023/hw4 ecs36c-hw4
+  git clone https://github.com/ecs36c-fq2024/hw4 ecs36c-hw4
   cd ./ecs36c-hw4
   mkdir build
   cd build
